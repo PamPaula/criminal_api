@@ -1,0 +1,1837 @@
+{
+	"info": {
+		"_postman_id": "8727009c-4e61-44b0-9e15-e4541bc34ece",
+		"name": "criminal_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"Lulay\",\r\n    \"senha\" : \"Gft2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nova Delegacia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTM2NzQ2fQ.pOWL0YdmMNGOeJaYXjtIA2pBqypnSose4P3E-DhAcn8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delegacia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegacia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Delegacia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg2ODUxfQ._AYAe06-GRUAV56HlBUU7SNMQX9AjMd-2ha6UX006xk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegacia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegacia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Delegacia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMTk0NTk3fQ.SmfLrAu4Zm5J2m2iI1YNDahMspaPaaA2jprFcxveMi8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegacia/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegacia",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Delegacia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMTkzNjE5fQ.eyYG6dWvWxTtTe3Ope7JLD5NgxMOg7-K092CgtKv92E",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"telefone\": \"9999999888\",\r\n        \"batalhao\": \"batalhao\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delegacia/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegacia",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Delegacia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjExNzQyfQ.670arv_BEcQnZr6XEQZqtqB5iDeTzJZwqG2txdV3LBM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegacia/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegacia",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Delegado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjEyNTcyfQ.2V_shxYMbRcV1qUmKMcyMbNVGHQF9JEs6vISz_1-50Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"José\",\r\n    \"funcional\" : \"56654324167\",\r\n    \"turno\" : \"noite\",\r\n    \"delegacia\" : {\r\n        \"id\" : \"2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delegado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Delegado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjEzODg4fQ.hgi8ANnkEDaPXcKs9HE3bD_maIT7TucDh3lgRaMQC_c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Delegado Ordem Crescente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNjM3MTQ5fQ.uugmqmrfgwJpSKINPs4dsTevflF_8Y1M5g4-rNV63OU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegado/asc",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado",
+						"asc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Delegado Ordem Decrescente",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNjM3NDk0fQ.jnHlUgKrszh0kjNjx9RIIzoQJIw9enCXjp3zW5RCtU4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegado/desc",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado",
+						"desc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Delegado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjEzMTE5fQ.jWuKqX8hMTPv4XcNHfXiucorgGxm7Dd_sGV94b95yIs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegado/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Delegado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjEzMzMxfQ.5vD0a3Xp56s8R5bZPlZHwksrvTJo2POrm4QInf272qQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 3,\r\n        \"nome\": \"Maria\",\r\n        \"funcional\": \"56654324167\",\r\n        \"turno\": \"noite\",\r\n        \"delegacia\": {\r\n            \"id\": \"3\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delegado/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Delegado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjEzODg4fQ.hgi8ANnkEDaPXcKs9HE3bD_maIT7TucDh3lgRaMQC_c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delegado/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delegado",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Policial",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE0NDkxfQ.ial3X9OGXObNEZtfVKEzXKXkWs-6KJeOrXCTNUJVSkM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Lorelay\",\r\n    \"funcional\" : \"9441634\",\r\n    \"patente\" : \"patente\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/policial",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Policial",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE1MTE5fQ.j0vLAdYPPJ_9GNssouCnh6-_r-Q3aZLxG5FS7pzp1VU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/policial",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Policial",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE0OTA1fQ.T3-eiyQqnyhgzy8zbPXBKARi-KcJ2nDDxnfpdnazYBc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/policial/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Policial Por Nome",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNjQ0MjQxfQ.fkRShKONbYhcMH3__Wpektr_rASeT9Dzcgg9RnrdHRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/policial/nome/peralta",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial",
+						"nome",
+						"peralta"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Policial",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE1MTE5fQ.j0vLAdYPPJ_9GNssouCnh6-_r-Q3aZLxG5FS7pzp1VU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\" : \"2\",\r\n        \"nome\": \"Tifa\",\r\n        \"funcional\": \"9441634\",\r\n        \"patente\": \"patente\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/policial/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Policial",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE1MTE5fQ.j0vLAdYPPJ_9GNssouCnh6-_r-Q3aZLxG5FS7pzp1VU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/policial/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"policial",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Criminoso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE4ODkwfQ.iBqujiQwCCzRz-EzVr9aq75ITozFmkBFftGkdbAr1FU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/criminoso",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criminoso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Criminoso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE3NzMxfQ.8UMUiVEqEu_dUk3ZR1X_GMkyXkXSf_vPjWTMxNdIyu8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Tifa\",\r\n    \"cpf\" : \"12345678910\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criminoso",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criminoso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Criminoso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE4MzYzfQ.OtESTmXr4Lp0arjrBK3002hFqwyZWjnPo2jtsZ8t7xA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/criminoso/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criminoso",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Criminoso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE4ODkwfQ.iBqujiQwCCzRz-EzVr9aq75ITozFmkBFftGkdbAr1FU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\" : \"3\",\r\n        \"nome\": \"Gary\",\r\n        \"cpf\": \"12345678910\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/criminoso/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criminoso",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Criminoso",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjE4ODkwfQ.iBqujiQwCCzRz-EzVr9aq75ITozFmkBFftGkdbAr1FU",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/criminoso/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"criminoso",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Vitima",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjc5ODIzfQ.T4AQLPQfZ3STTyuLsJhNRCYmO_Y9LZ69UqObjSyaqWE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vitima",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vitima"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nova Vitima",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU5MzgyfQ.RLmdSRl4Mqm_ieZXISsDbyRGLeODFA8vySuDCZcQyW0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"rato\",\r\n    \"cpf\" : \"40735464812\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vitima",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vitima"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Vitima",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjc5MzI3fQ.kCzlWgydM57Xz6puSg7Vm55jKSJ_GAqFXb_u6dxN3y0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vitima/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vitima",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Vitima",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjc5Njk1fQ.ORnz_WpU6ja_mS1AIqe7APrYzKFR_CuuKOSRKYTAKnM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n    \"nome\": \"passaro\",\r\n    \"cpf\": \"01234567891\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/vitima/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vitima",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Vitima",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjc5ODIzfQ.T4AQLPQfZ3STTyuLsJhNRCYmO_Y9LZ69UqObjSyaqWE",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/vitima/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vitima",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Legista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgyNDQxfQ.Kc_THJCkJeoyUqjJKgQGD-SuQGGrMNYmXm0GcxKoN-Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/legista",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Legista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgxNDEwfQ.37iYr0HOhGTgtLgBqCYZgSw4CDs6allv6Tzo942Nlk4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Olivia\",\r\n    \"crm\" : \"123456456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/legista",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legista"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Legista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgyMTU5fQ.7dR9D5s2Nu78LKRgsarzHlUpNbqMEazpRcfi8scGHzM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/legista/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legista",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Legista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgyNDQxfQ.Kc_THJCkJeoyUqjJKgQGD-SuQGGrMNYmXm0GcxKoN-Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n        \"nome\": \"Regiane\",\r\n        \"crm\": \"123456456\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/legista/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legista",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Legista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgyNDQxfQ.Kc_THJCkJeoyUqjJKgQGD-SuQGGrMNYmXm0GcxKoN-Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/legista/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"legista",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Crime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgzODkxfQ.TfeWg7RUHJUEjx7k3sfoqGoVm6hs7rze_mLud1lbfro",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/crime",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Crime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgyODMzfQ.aJBUJIeTAJ8Xs5TokfkeWC332ZOsdytjbV2mMnTqytk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"2021-09-07\",\r\n    \"descricao\" : \"roubo\",\r\n    \"criminoso\" : {\r\n        \"id\" : \"1\"\r\n    },\r\n    \"vitima\" : {\r\n        \"id\" : \"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crime",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Crime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgzMTkwfQ.y7N-_sJbLi7tzmigstMPiaavc5QMmwhjJfaswSq7zQQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/crime/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crime",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Crime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjgzODkxfQ.TfeWg7RUHJUEjx7k3sfoqGoVm6hs7rze_mLud1lbfro",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n        \"data\": \"2021-09-07T00:00:00.000+00:00\",\r\n        \"descricao\": \"assassinato\",\r\n        \"criminoso\": {\r\n            \"id\": 1,\r\n            \"nome\": \"Tifa\",\r\n            \"cpf\": \"12345678910\"\r\n        },\r\n        \"vitima\": {\r\n            \"id\": 1,\r\n            \"nome\": \"mariposa\",\r\n            \"cpf\": \"01234567891\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/crime/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crime",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Crime",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg0MDQ1fQ.ThhiSTB26UdJyEg9IcsJaGMK7syLie_7XSMgeqQk0s0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/crime/5",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"crime",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Autopsia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg2MDI3fQ.N-V-roJC5sAVd0dfDs12M9X-Ga9sfxCZUCoU3RZvxaA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/autopsia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autopsia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nova Autopsia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg1MTE5fQ.syMR-ytiIBLWJ9Y0V59ro2Yg2i5xSil4s6vOa7PCWyo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"2021-09-10\",\r\n    \"laudo\" : \"roubo pra brincar\",\r\n    \"vitima\" : {\r\n        \"id\" : \"1\"\r\n    },\r\n    \"legista\" : {\r\n        \"id\" : \"1\"\r\n    } \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/autopsia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autopsia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Autopsia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg1NDYzfQ.rugTqT2ThNjMbmjZP3NJNw0KSM6XmeAB5GRJ0v-b81M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/autopsia/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autopsia",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Autopsia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg2MDI3fQ.N-V-roJC5sAVd0dfDs12M9X-Ga9sfxCZUCoU3RZvxaA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\" : \"3\",\r\n        \"data\": \"2021-09-10T00:00:00.000+00:00\",\r\n        \"laudo\": \"assassinato para comer\",\r\n        \"vitima\": {\r\n            \"id\": 3\r\n        },\r\n        \"legista\": {\r\n            \"id\": 1\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/autopsia/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"autopsia",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Prisão",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg3NTg0fQ.byf10e8jiYk4DV1KefO1AJ71wTQLIXf9kDvW7r8YRak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/prisao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prisao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nova Prisão",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg2ODUxfQ._AYAe06-GRUAV56HlBUU7SNMQX9AjMd-2ha6UX006xk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"data\" : \"2021-09-10\",\r\n    \"policial\" : {\r\n        \"id\" : \"1\"\r\n    },\r\n    \"criminoso\" : {\r\n        \"id\" : \"1\"\r\n    },\r\n    \"vitima\" : {\r\n        \"id\" : \"1\"\r\n    },\r\n    \"delegacia\" : {\r\n        \"id\" : \"3\"\r\n    },\r\n    \"delegado\" : {\r\n        \"id\" : \"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prisao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prisao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Prisão",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg3MjM2fQ.g2mgZPtdi6qLKroUfsnjCFAYQNYWp-4VCf3zatAYjbc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/prisao/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prisao",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Prisão",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxMjg3NTg0fQ.byf10e8jiYk4DV1KefO1AJ71wTQLIXf9kDvW7r8YRak",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n        \"data\": \"2021-09-10T00:00:00.000+00:00\",\r\n        \"policial\": {\r\n            \"id\": 3\r\n        },\r\n        \"criminoso\": {\r\n            \"id\": 3\r\n        },\r\n        \"delegacia\": {\r\n            \"id\": 3\r\n        },\r\n        \"delegado\": {\r\n            \"id\": 3\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/prisao/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"prisao",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Juiz",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTUxNDY4fQ.dYFzBZ2ciFwD_4EbwqtaJFwAPubdSdWe3IPaD90xADc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/juiz",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juiz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Juiz",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTUxNDY4fQ.dYFzBZ2ciFwD_4EbwqtaJFwAPubdSdWe3IPaD90xADc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Luiz\",\r\n    \"cpf\" : \"12345678900\",\r\n    \"email\" : \"luiz@luiz.com\",\r\n    \"telefone\" : \"99999999999\",\r\n    \"usuario\" : {\r\n        \"email\" : \"luiz@luiz.com\",\r\n        \"senha\" : \"Gft2021\",\r\n        \"perfil\" : {\r\n            \"id\" : \"1\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/juiz",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juiz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Juiz",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTUxNzI2fQ.MaoKggE864dMYNb9YqfAUB59VxIxsT1WXTUJBn1G_c8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/juiz/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juiz",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Juiz",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTUxNzI2fQ.MaoKggE864dMYNb9YqfAUB59VxIxsT1WXTUJBn1G_c8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" :\"3\",\r\n    \"nome\": \"Britney\",\r\n    \"cpf\" : \"12345678900\",\r\n    \"email\": \"britney@britney.com\",\r\n    \"telefone\": \"99999999999\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/juiz/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juiz",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Juiz",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTUxNzI2fQ.MaoKggE864dMYNb9YqfAUB59VxIxsT1WXTUJBn1G_c8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/juiz/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"juiz",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Advogado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU4MTg4fQ.p8nX6FeUjG6WYg-mWG3PT-17chR0DVTrGaoIVA9Mgpk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/advogado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"advogado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo Advogado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU4MTg4fQ.p8nX6FeUjG6WYg-mWG3PT-17chR0DVTrGaoIVA9Mgpk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\" : \"Vitor\",\r\n    \"cpf\" : \"98745632100\",\r\n    \"email\" : \"vitor@vitor.com\",\r\n    \"telefone\" : \"99999999999\",\r\n    \"usuario\" : {\r\n        \"email\" : \"vitor@vitor.com\",\r\n        \"senha\" : \"1234\",\r\n        \"perfil\" : {\r\n            \"id\" : \"2\"\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/advogado",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"advogado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Advogado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU4MTg4fQ.p8nX6FeUjG6WYg-mWG3PT-17chR0DVTrGaoIVA9Mgpk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/advogado/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"advogado",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Advogado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU4MTg4fQ.p8nX6FeUjG6WYg-mWG3PT-17chR0DVTrGaoIVA9Mgpk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : \"3\",\r\n    \"nome\": \"Bruna\",\r\n    \"cpf\" : \"12345678900\",\r\n    \"email\": \"bruna@bruna.com\",\r\n    \"telefone\": \"99999999999\",\r\n    \"usuario\" : {\r\n        \"id\" : \"7\",\r\n        \"email\" : \"bruna@bruna.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/advogado/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"advogado",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Advogado",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTdGFydGVyIiwiZXhwIjoxNjMxNTU4MTg4fQ.p8nX6FeUjG6WYg-mWG3PT-17chR0DVTrGaoIVA9Mgpk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/advogado/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"advogado",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
